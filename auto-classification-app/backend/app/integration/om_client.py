@@ -29,7 +29,7 @@ class OMClient:
         if not hasattr(self, 'metadata'):
             # Prioritize environment variables for Cloud/External config
             self.host_port = os.getenv("OPENMETADATA_HOST", "http://localhost:8585/api")
-            self.jwt_token = os.getenv("OPENMETADATA_TOKEN", "eyJhbGciOiJSUzI1NiIsImtpZCI6IkdiMzg5YS05Zjc2LWdkanMtYTkyai0wMjQyYms5NDM1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcGVuLW1ldGFkYXRhLm9yZyIsInN1YiI6ImluZ2VzdGlvbi1ib3QiLCJyb2xlcyI6WyJJbmdlc3Rpb25Cb3RSb2xlIl0sImVtYWlsIjoiaW5nZXN0aW9uLWJvdEBvcGVuLW1ldGFkYXRhLm9yZyIsImlzQm90Ijp0cnVlLCJ0b2tlblR5cGUiOiJCT1QiLCJ1c2VybmFtZSI6ImluZ2VzdGlvbi1ib3QiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJpbmdlc3Rpb24tYm90IiwiaWF0IjoxNzY3MzczMTc1LCJleHAiOm51bGx9.THFNp0ilQU29GCQCaQcExjDzPTnp7nyAtws9d0--aU9jgmBrsM_ffK9N5j0fFHJ8UakrsXShgisjxe4xMm8aQiliMR23k_H5pX3YwRxHvfWELAsg2GMj6DmiWQo_Ov1fnwTVg_CkAft6PzENwzpy2tmkz-19xx5sN5OUwb-Vp3XVzzG2PHktl1Qq3GIN_G8qOdGXv2RIHrMzXtqx2h5_UVRnz-9KgzCGZ5IqVnyjed3dMq8MWQO61JAx7A8pabbmHQ4jr996-aS3GSrtwH_61Og1yr4nKfRcCIYqaVrubDMQ9FvF0VEACDQDoXDLBnNhjhxKiLeANbXMv3dxIzyjhw")
+            self.jwt_token = os.getenv("OPENMETADATA_TOKEN", "")
             
             self.config = OpenMetadataConnection(
                 hostPort=self.host_port,
