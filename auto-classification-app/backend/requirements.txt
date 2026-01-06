@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pandas
+spacy
+python-multipart
+pydantic
+openpyxl
+pyarrow
+lxml
+pdfplumber
+pyyaml
+pyjwt
+cryptography
+openmetadata-ingestion>=1.11.0
+boto3
+chromadb
+sentence-transformers

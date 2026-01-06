@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    font-family: 'Outfit', sans-serif;
+    background: radial-gradient(circle at top left, #f3f4f6 0%, #eef2ff 50%, #f0fdfa 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-lg border border-white/50 shadow-sm;
+  }
+  .glass-card {
+    @apply bg-white/60 backdrop-blur-md border border-white/40 shadow-sm hover:shadow-md transition-all duration-300 hover:bg-white/80;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl hover:shadow-lg hover:shadow-blue-500/20 transition-all active:scale-95 font-medium flex items-center gap-2;
+  }
+  .btn-secondary {
+    @apply px-4 py-2 bg-white text-slate-700 border border-slate-200 rounded-xl hover:bg-slate-50 transition active:scale-95 font-medium shadow-sm flex items-center gap-2;
+  }
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border shadow-sm;
+  }
+  /* Modern Badge Colors */
+  .badge-red {
+    @apply bg-red-50/80 text-red-700 border-red-200;
+  }
+  .badge-orange {
+    @apply bg-orange-50/80 text-amber-700 border-orange-200;
+  }
+  .badge-blue {
+    @apply bg-indigo-50/80 text-indigo-700 border-indigo-200;
+  }
+  .badge-green {
+    @apply bg-emerald-50/80 text-emerald-700 border-emerald-200;
+  }
+  .badge-gray {
+    @apply bg-slate-100/80 text-slate-600 border-slate-200;
+  }
+}

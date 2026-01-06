@@ -1,0 +1,28 @@
+# Globally Ignore Dependencies
+**/node_modules/
+**/venv/
+**/.venv/
+**/__pycache__/
+*.pyc
+.DS_Store
+.checkpoints/
+
+# Environment Variables
+.env
+**/.env
+
+# Temporary Data & Uploads
+**/uploads/*
+!**/uploads/.keep
+*.parquet
+*.db
+*.sqlite3
+chroma_db/
+minio_data/
+
+# IDE
+.vscode/
+.idea/
+
+# Docker Volumes
+**/docker-volume/

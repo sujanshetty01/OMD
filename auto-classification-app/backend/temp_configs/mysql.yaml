@@ -1,0 +1,26 @@
+sink:
+  config: {}
+  type: metadata-rest
+source:
+  serviceConnection:
+    config:
+      authType:
+        password: password
+      databaseSchema: products_db
+      hostPort: localhost:3306
+      scheme: mysql+pymysql
+      type: Mysql
+      username: admin
+  serviceName: Local_MySQL_Inventory
+  sourceConfig:
+    config:
+      includeTables: true
+      markDeletedTables: true
+      type: DatabaseMetadata
+  type: mysql
+workflowConfig:
+  openMetadataServerConfig:
+    authProvider: openmetadata
+    hostPort: https://promptiq-in.free-1.getcollate.cloud/api
+    securityConfig:
+      jwtToken: eyJraWQiOiJHYjM4OWEtOWY3Ni1nZGpzLWE5MmotMDI0MmJrOTQzNTYiLCJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJvcGVuLW1ldGFkYXRhLm9yZyIsInN1YiI6ImluZ2VzdGlvbi1ib3QiLCJyb2xlcyI6WyJJbmdlc3Rpb25Cb3RSb2xlIl0sImVtYWlsIjoiaW5nZXN0aW9uLWJvdEBwcm9tcHRpcS5pbiIsImlzQm90Ijp0cnVlLCJ0b2tlblR5cGUiOiJCT1QiLCJpYXQiOjE3NjU3OTg5ODAsImV4cCI6bnVsbH0.Dt3ekSxpFEj3cfqyTIAm5cJ05yX9bf34BdsMa-iu7T4pq-n_J-2k2R5VSDjJdfNbJ6hHwrMCurXKx7yRwi7yfEB8aPxkjGd6-b2EWoDAqhikQYGuu_ckRSec-aUkpMHqxUAdCOLzxZfnG_zv9MRMYLRcJEWXl53gs1AJbSmjH4dQmJyQ5C9OP14mTsGv-7QjeM5z46-m5jMP6TW9fnQgj4I3e_rFQIHSRXA9C8lSKroJvyuTqZwidrLrQLa78TGzM8b7-zvspyb_YgmFdQdFVbYAtfZXqISPT25-wYi9qgl6Xn91vasUKuSFSBfVRBfY66scoNK3c16iRoJoJTWkUw
