@@ -33,17 +33,27 @@ AWS_REGION=us-east-1
 *(If you skip this, the S3 Ingestion features will simply fail gracefully).*
 
 ### 3. One‑click Start
-Run the start script to initialize the environment and launch the application:
+
+#### 🍎 macOS / 🐧 Linux
+Run the shell script to initialize the environment:
 ```bash
 cd auto-classification-app
 ./start.sh
 ```
-The script automates the entire process:
-- Generates security keys.
-- Starts the OpenMetadata stack (Docker) and External Sources (Postgres, MinIO).
-- Waits for services to be ready.
-- **Automatically configures the authentication token** (no manual copy-paste needed!).
-- Installs dependencies and launches the full stack.
+
+#### 🪟 Windows
+Run the batch file (using Command Prompt or PowerShell):
+```cmd
+cd auto-classification-app
+start.bat
+```
+
+Both scripts automatically:
+- Generate security keys.
+- Start the OpenMetadata stack (Docker) and External Sources.
+- Wait for services to be online.
+- Configure authentication.
+- Launch the Backend (Python) and Frontend (React).
 
 Once running, access the platform at:
 - **Frontend UI**: [http://localhost:3000](http://localhost:3000)
